@@ -1,0 +1,29 @@
+
+	public class Triangle{
+	
+	public static void main(String[] args) {
+	double  x1=1, x2=3, x3=5,y1=1,y2=4,y3=3;     
+	double a, b, c;
+	
+	a=(Math.sqrt(Math.pow((x3-x2),2)+(Math.pow((y3-y2),2)))); 
+		System.out.printf("a = %.2f\n",a);
+	
+	b=(Math.sqrt(Math.pow((x3-x1),2)+(Math.pow((y3-y1),2)))); 
+		System.out.printf("b = %.2f\n",b);
+	
+	c=(Math.sqrt(Math.pow((x2-x1),2)+(Math.pow((y2-y1),2)))); 
+		System.out.printf("c = %.2f\n",c);
+	
+	double A= (Math.acos((a*a-b*b-c*c)/(-2*b*c)));
+		System.out.printf("A = %.2f\n",A);
+	
+	double B= (Math.acos((b*b-a*a-c*c)/(-2*a*c)));
+		System.out.printf("B = %.2f\n",B);
+	
+	double C= (Math.acos((c*c-b*b-a*a)/(-2*a*b)));
+		System.out.printf("C = %.2f",C);
+	
+	
+	
+	}
+	}
